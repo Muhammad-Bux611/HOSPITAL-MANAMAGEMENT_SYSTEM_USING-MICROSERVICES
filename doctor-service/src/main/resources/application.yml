@@ -1,0 +1,23 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: doctor-service
+
+  # Database Connection Settings
+  datasource:
+    url: jdbc:mysql://localhost:3306/doctor_db
+    username: root
+    password: software@muet19
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    
+  # JPA & Hibernate Configurations
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
